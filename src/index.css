@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('./assets/fonts/GE-SS-Two-Bold.otf') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium (most common) */
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('./assets/fonts/GE-SS-Two-Bold.otf') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('./assets/fonts/GE-SS-Two-Bold.otf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'GE SS Two', Arial, sans-serif;
+  cursor: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.fixed {
+  will-change: transform;
+}
+
+.animated-div {
+  will-change: width;
+}
+
+
+/* تحسين الأداء */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/* لتحسين أداء الرسوم */
+.animated-div {
+  will-change: width, clip-path;
+}
+
+/* لجعل الدائرة تظهر بشكل جميل */
+.circle {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

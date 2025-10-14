@@ -1,0 +1,199 @@
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-main {
+  background-color: transparent;
+  width: 100%;
+}
+
+.navbar-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.navbar-rightside {
+  gap: 15rem;
+}
+
+.navbar-leftside {
+  gap: 15rem;
+}
+.navbar-rightside .navbar-link  {
+  gap: 15rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #000000;
+  }
+}
+
+.navbar-leftside .navbar-link {
+  gap: 15rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: #000000;
+  }
+}
+
+
+.scroll-cue-title-main{
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #faf8f8;
+  text-shadow:
+    0 0 7px #161212,
+    0 0 10px #1f1616,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+
+}
+
+.scroll-cue-title-elevators{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align:right;
+  padding-right: 4rem;
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.scroll-cue-text-elevators{
+  width: 50%;
+  margin-left: auto; /* push to right within full-width wrapper */
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 6rem;
+  font-weight: bold;
+  /* glassy blur background */
+  /* background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  border-radius: 12px;
+  padding: 1rem 1.5rem; */
+}
+
+
+.scroll-cue-title-construction{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: right;
+  padding-right:6rem;
+  ;
+}
+.scroll-cue-text-construction{
+  width: 50%;
+  margin-left: auto; /* push to right within full-width wrapper */
+  color: white;
+  font-size: 3rem;
+  text-align: right;
+  margin-right: 6rem;
+  font-weight: bold;
+}
+
+.scroll-cue-title-projects{
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  
+  ;
+}
+.scroll-cue-text-projects{
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 2rem;
+}
+.scroll-cue-title-partners{
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  ;
+}
+.scroll-cue-text-partners{
+  width: 50%;
+}
+
+.scroll-cue-title-about{
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 6rem;
+  ;
+}
+.scroll-cue-text-about{
+  width: 50%;
+  margin-left: auto; /* push to right within full-width wrapper */
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 6rem;
+  font-weight: bold;
+  
+}
+
+/* -------------------- CUE ANIMATIONS -------------------- */
+@keyframes cueFadeSlideIn {
+  0% { opacity: 0; transform: translateY(20px) scale(0.98); filter: blur(6px); }
+  50% { opacity: 1; transform: translateY(0) scale(1.01); filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes cueFadeSlideOut {
+  0% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+  100% { opacity: 0; transform: translateY(-20px) scale(0.98); filter: blur(6px); }
+}
+
+.anim-cue {
+  transition: opacity 500ms ease, transform 600ms cubic-bezier(0.22, 1, 0.36, 1), filter 500ms ease;
+  will-change: opacity, transform, filter;
+}
+
+.anim-cue-active {
+  animation: cueFadeSlideIn 700ms forwards;
+}
+
+.anim-cue-inactive {
+  animation: cueFadeSlideOut 500ms forwards;
+}
+
+.anim-cue .text-soft-reveal {
+  opacity: 0;
+  animation: cueFadeSlideIn 800ms 120ms forwards;
+}
+
+.anim-cue .grid-soft-reveal img {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: cueFadeSlideIn 700ms forwards;
+}
+
+.anim-cue .grid-soft-reveal img:nth-child(2) { animation-delay: 80ms; }
+.anim-cue .grid-soft-reveal img:nth-child(3) { animation-delay: 160ms; }
+.anim-cue .grid-soft-reveal img:nth-child(4) { animation-delay: 240ms; }
