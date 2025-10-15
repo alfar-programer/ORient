@@ -28,6 +28,7 @@ import Projects from '../pages/Projects/Projects';
 import Contact from '../pages/Contact/Contact';
 import Navbar from '../components/Ui/Navbar/Navbar';
 import AnimationCanva from '../components/AnimationCanvas'
+import Footer from '../components/Ui/Footer/Footer';
 
 const AppRoutes = () => {
   return (
@@ -41,6 +42,7 @@ const AppRoutes = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>
+        <Footer />
     </>
   );
 };

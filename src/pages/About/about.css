@@ -1,0 +1,39 @@
+.main-aboutus{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.min-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.text-titleabout {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.minmin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.text-right {
+    text-align: right;
+    direction: rtl;
+    max-width: 600px;
+}

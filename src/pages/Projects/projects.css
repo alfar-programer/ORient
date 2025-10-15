@@ -1,0 +1,155 @@
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0e1626 0%, #111a2e 100%);
+  font-family: "Cairo", sans-serif;
+}
+
+.floating-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+}
+
+.blob1 {
+  background: #00e0ff;
+  top: 10%;
+  left: 15%;
+}
+
+.blob2 {
+  background: #45f3ff;
+  bottom: 10%;
+  right: 20%;
+}
+
+.blob3 {
+  background: #007bff;
+  top: 60%;
+  left: 60%;
+}
+
+.container1 {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
+  color: #fff;
+}
+
+.container1 h2 {
+  width: 100%;
+  color: #45f3ff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container1 .row100 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container1 .row100 .col {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #45f3ff;
+}
+
+.inputBox input,
+.inputBox textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  color: #fff;
+  z-index: 1;
+}
+
+.inputBox textarea {
+  height: 100px;
+  resize: none;
+}
+
+.inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  transition: 0.5s;
+  pointer-events: none;
+  color: #45f3ff;
+}
+
+.inputBox input:focus + .text,
+.inputBox input:valid + .text,
+.inputBox textarea:focus + .text,
+.inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+  color: #03e9f4;
+  font-size: 16px;
+}
+
+.inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+
+.inputBox input:focus ~ .line,
+.inputBox input:valid ~ .line,
+.inputBox textarea:focus ~ .line,
+.inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+button[type="submit"] {
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  outline: none;
+  background: #45f3ff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #03e9f4;
+  box-shadow: 0 0 10px #45f3ff, 0 0 20px #45f3ff;
+}
