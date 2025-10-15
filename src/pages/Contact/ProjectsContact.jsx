@@ -54,7 +54,7 @@ const ProjectsContact = () => {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="bg-[#1c2333]/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 flex flex-col"
+              className="box-sizeProjects bg-[#1c2333]/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}

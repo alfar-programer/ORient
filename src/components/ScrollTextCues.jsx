@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
+import LogoMarquee from "./Marquee/LogoMarquee";
+import { LOGOS } from "../constants/data";
 import TextTrail from "./TextTrail";
 
 // Renders a list of cues that appear only within their scroll Y ranges
@@ -40,20 +42,20 @@ const ScrollTextCues = ({ cues = [], offsetY = 0 }) => {
       {withActivity.map((c) => {
         const wrapperClass =
           c.className ||
-          "fixed w-full h-[50vh] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center px-6";
+          "fixed w-full h-[70vh] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center px-6";
         const hasStructured = typeof c.title !== "undefined" || typeof c.text !== "undefined";
 
         return (
           <div
             key={c.id}
             className={`${wrapperClass} anim-cue ${c.__active ? "anim-cue-active" : "anim-cue-inactive"}`}
+            style={c.style || {}}
             aria-live="polite"
           >
             {hasStructured ? (
               <>
                 {typeof c.title !== "undefined" && (
-                  <div text={c.title} className={c.titleClassName || "text-white text-5xl font-extrabold drop-shadow-lg mb-3"}>{c.title}</div>
-                
+                  <div text={c.title} className={c.titleClassName || "text-white text-6xl md:text-7xl font-extrabold drop-shadow-lg mb-6"}>{c.title}</div>
                 )}
                   {/* <TextTrail 
                     text="React Bits"
@@ -73,17 +75,17 @@ const ScrollTextCues = ({ cues = [], offsetY = 0 }) => {
                 {typeof c.text !== "undefined" && (
                   <div className={c.textClassName || "text-white/95 text-2xl font-semibold drop-shadow"}>{c.text}</div>
                 )}
-                {Array.isArray(c.images) && c.images.length > 0 && (
-                  <div className={c.imagesWrapperClassName || "mt-4 flex items-center justify-center gap-4 flex-wrap"}>
-                    {c.images.map((img, idx) => (
-                      <img
-                        key={img.id ?? `${c.id}-img-${idx}`}
-                        src={img.src}
-                        alt={img.alt || ""}
-                        className={img.className || "w-28 h-28 object-contain rounded-md bg-white/5 p-2"}
-                        draggable={false}
-                      />
-                    ))}
+                {c.marqueeKey && Array.isArray(LOGOS[c.marqueeKey]) && LOGOS[c.marqueeKey].length > 0 && (
+                  <div className="mt-4 sm:mt-6 pointer-events-auto">
+                    <LogoMarquee
+                      items={LOGOS[c.marqueeKey]}
+                      speed={80}
+                      gap={36}
+                      itemClassName="rounded-md bg-white/10 backdrop-blur-sm p-2 sm:p-3 shadow-sm"
+                      itemHeight="100%"
+                      containerClassName="w-full overflow-hidden h-48 sm:h-64 md:h-80"
+                      ariaLabel={`${c.title || c.id} logos`}
+                    />
                   </div>
                 )}
               </>

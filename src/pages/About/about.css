@@ -4,13 +4,36 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Responsive full height for about page */
+@media (max-width: 1023px) {
+  .main-aboutus {
+    height: 100vh; /* Tablet: full viewport height */
+    padding: 0; /* Tablet: no padding */
+  }
+}
+
+@media (max-width: 639px) {
+  .main-aboutus {
+    height: 100vh; /* Mobile: full viewport height */
+    padding: 0; /* Mobile: no padding */
+  }
 }
 
 .container {
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    height: 100%;
+    padding: 1rem; /* Minimal padding for content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .min-container {
     display: flex;
     flex-direction: column;
@@ -18,11 +41,42 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    height: 100%;
+}
+
+/* Responsive container for full width/height */
+@media (max-width: 1023px) {
+  .container {
+    padding: 1rem; /* Tablet: minimal padding */
+    height: 100vh; /* Tablet: full height */
+  }
+}
+
+@media (max-width: 639px) {
+  .container {
+    padding: 0.5rem; /* Mobile: minimal padding */
+    height: 100vh; /* Mobile: full height */
+  }
 }
 
 .text-titleabout {
     font-size: 4rem;
     margin-bottom: 2rem;
+}
+
+/* Responsive title font size */
+@media (max-width: 1023px) {
+  .text-titleabout {
+    font-size: 3rem; /* Tablet: smaller title */
+    margin-bottom: 1.5rem; /* Tablet: less margin */
+  }
+}
+
+@media (max-width: 639px) {
+  .text-titleabout {
+    font-size: 2.5rem; /* Mobile: smaller title */
+    margin-bottom: 1rem; /* Mobile: less margin */
+  }
 }
 
 .minmin-container {
@@ -31,9 +85,36 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    height: 100%;
+    min-height: 60vh; /* Ensure minimum height for content */
 }
+
+/* Responsive grid layout */
+@media (max-width: 767px) {
+  .minmin-container {
+    flex-direction: column; /* Mobile: vertical layout */
+    gap: 2rem; /* Mobile: add gap */
+    min-height: 80vh; /* Mobile: more height for vertical layout */
+  }
+}
+
 .text-right {
     text-align: right;
     direction: rtl;
     max-width: 600px;
+}
+
+/* Responsive text container */
+@media (max-width: 1023px) {
+  .text-right {
+    max-width: 100%; /* Tablet: full width */
+    text-align: center; /* Tablet: center text */
+  }
+}
+
+@media (max-width: 639px) {
+  .text-right {
+    text-align: center; /* Mobile: center text */
+    padding: 0 1rem; /* Mobile: add padding */
+  }
 }

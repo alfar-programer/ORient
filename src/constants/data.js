@@ -57,7 +57,9 @@ export const SCROLL_TEXT_CUES = [
     startY: 4200, 
     endY: 4840,
     titleClassName: "scroll-cue-title-partners",
-    textClassName: "scroll-cue-text-partners"
+    textClassName: "scroll-cue-text-partners",
+    marqueeKey: "partners"
+   
   },
   {
     id: "cue-5000",
@@ -65,21 +67,18 @@ export const SCROLL_TEXT_CUES = [
     text: "نفخر بثقة شركائنا وعملائنا",
     startY: 5000,
     endY: 5400,
-    imagesWrapperClassName: "mt-6 flex items-center justify-center gap-6 flex-wrap",
-    images: [
-      { id: "img-1", src: "/images/Logo.png", alt: "Logo", className: "w-24 h-24 object-contain rounded-md bg-white/5 p-2" },
-      { id: "img-2", src: "/images/Screenshot 2025-10-06 160853.png", alt: "Screenshot", className: "w-28 h-20 object-cover rounded-md" },
-    ],
+    marqueeKey: "clients",
     titleClassName: "text-white text-5xl font-extrabold drop-shadow-lg",
     textClassName: "text-white/90 text-xl",
-    className: "fixed left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 z-20 text-center px-6"
+    className: "fixed left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 z-20 text-center px-6",
+    style: { height: "70vh", width: "100%" }
   },
   {                           
     id: "cue-about",
     title: "من نحن", 
     text: "في شركة المشرق,نجمع بين الخبرة الهندسية الدقيقة في حلول النقل العمودي والتميز في تنفيذ مشاريع المقاولات الكبري منذ اكثر من عقد,ونحن نلتزم بتقديم جودة استثنائيه ومعايير سلامة لا تهاون فيها لاننا نؤمن بان الجوده الفائقة ليست مجرد وعد بل هي ضمان نقدمه في كل مشروع نحن شريككم الذي يحول رؤاكم الي واقه ملموس,من الاساسات وحتي اعلي قمة", 
     startY: 5510, 
-    endY: 6140,
+    endY: 7000,
     titleClassName: "scroll-cue-title-about",
     textClassName: "scroll-cue-text-about"
   },
@@ -94,3 +93,21 @@ export const contactStats = [
   { id: 3, icon: "FaTrophy", number: "+11", label: "عميل راضي" },
   { id: 4, icon: "FaCode", number: "+11", label: "مشروع مكتمل" }
 ];
+
+// Centralized logos for marquee sections
+export const LOGOS = {
+  partners: [
+    { id: "p-1", src: "/images/Logo.png", alt: "Partner 1" },
+    { id: "p-2", src: "/images/Logo.png", alt: "Partner 2" },
+    { id: "p-3", src: "/images/Logo.png", alt: "Partner 3" },
+    { id: "p-4", src: "/images/Logo.png", alt: "Partner 4" },
+    { id: "p-5", src: "/images/Logo.png", alt: "Partner 5" }
+  ],
+  clients: [
+    { id: "c-1", src: "/images/Logo.png", alt: "Client 1" },
+    { id: "c-2", src: "/images/Logo.png", alt: "Client 2" },
+    { id: "c-3", src: "/images/Logo.png", alt: "Client 3" },
+    { id: "c-4", src: "/images/Logo.png", alt: "Client 4" },
+    { id: "c-5", src: "/images/Logo.png", alt: "Client 5" }
+  ]
+};

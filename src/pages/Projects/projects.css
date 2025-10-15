@@ -60,10 +60,41 @@
   margin-bottom: 20px;
 }
 
+/* Responsive styles for contact form */
+@media (max-width: 1023px) {
+  .container1 {
+    width: 90%; /* Tablet: wider container */
+    padding: 15px; /* Tablet: less padding */
+  }
+  
+  .container1 h2 {
+    font-size: 28px; /* Tablet: smaller title */
+  }
+}
+
+@media (max-width: 639px) {
+  .container1 {
+    width: 95%; /* Mobile: almost full width */
+    padding: 10px; /* Mobile: minimal padding */
+  }
+  
+  .container1 h2 {
+    font-size: 24px; /* Mobile: smaller title */
+    margin-bottom: 15px; /* Mobile: less margin */
+  }
+}
+
 .container1 .row100 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Responsive grid for form rows */
+@media (max-width: 639px) {
+  .container1 .row100 {
+    grid-template-columns: 1fr; /* Mobile: single column */
+  }
 }
 
 .container1 .row100 .col {
@@ -90,6 +121,14 @@
   padding: 0 10px;
   color: #fff;
   z-index: 1;
+}
+
+/* Responsive font sizes for form inputs */
+@media (max-width: 639px) {
+  .inputBox input,
+  .inputBox textarea {
+    font-size: 16px; /* Mobile: smaller font */
+  }
 }
 
 .inputBox textarea {
