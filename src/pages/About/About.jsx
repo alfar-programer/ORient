@@ -1,5 +1,6 @@
 // src/pages/About/About.jsx
 import React from 'react';
+import Footer from '../../components/Ui/Footer/Footer';
 import "./about.css";
 const About = () => {
   return (  
@@ -29,6 +30,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

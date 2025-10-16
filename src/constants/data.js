@@ -42,22 +42,13 @@ export const SCROLL_TEXT_CUES = [
     textClassName: "scroll-cue-text-construction"
   },
   { 
-    id: "cue-4300",
+    id: "cue-5600",
     title: "مشاريعنا تتحدث عنا", 
     text: "كل مشروع هو قصة نجاح مشتركة,تعكس التزامنا بالتميز والابتكار", 
-    startY: 3450, 
-    endY: 4100,
+    startY: 3200, 
+    endY: 4340,
     titleClassName: "scroll-cue-title-projects",
-    textClassName: "scroll-cue-text-projects", 
-  },
-  { 
-    id: "cue-5600",
-    title: "شركائنا", 
-    text: "", 
-    startY: 4200, 
-    endY: 4840,
-    titleClassName: "scroll-cue-title-partners",
-    textClassName: "scroll-cue-text-partners",
+    textClassName: "scroll-cue-text-projects",
     marqueeKey: "partners"
    
   },
@@ -65,13 +56,13 @@ export const SCROLL_TEXT_CUES = [
     id: "cue-5000",
     title: "عملاؤنا", 
     text: "نفخر بثقة شركائنا وعملائنا",
-    startY: 5000,
+    startY: 4600,
     endY: 5400,
     marqueeKey: "clients",
-    titleClassName: "text-white text-5xl font-extrabold drop-shadow-lg",
-    textClassName: "text-white/90 text-xl",
+    titleClassName: "scroll-cue-title-projects",
+    textClassName: "scroll-cue-text-projects",
     className: "fixed left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 z-20 text-center px-6",
-    style: { height: "70vh", width: "100%" }
+    style: { height: "80vh", width: "100%" }
   },
   {                           
     id: "cue-about",
@@ -97,17 +88,17 @@ export const contactStats = [
 // Centralized logos for marquee sections
 export const LOGOS = {
   partners: [
-    { id: "p-1", src: "/images/Logo.png", alt: "Partner 1" },
-    { id: "p-2", src: "/images/Logo.png", alt: "Partner 2" },
-    { id: "p-3", src: "/images/Logo.png", alt: "Partner 3" },
-    { id: "p-4", src: "/images/Logo.png", alt: "Partner 4" },
-    { id: "p-5", src: "/images/Logo.png", alt: "Partner 5" }
+    { id: "p-1", src: "/images/project1.jpg", alt: "Partner 1" },
+    { id: "p-2", src: "/images/project2.jpg", alt: "Partner 2" },
+    { id: "p-3", src: "/images/project3.jpg", alt: "Partner 3" },
+    { id: "p-4", src: "/images/project4.jpg", alt: "Partner 4" },
+    { id: "p-5", src: "/images/project5.jpg", alt: "Partner 5" }
   ],
   clients: [
-    { id: "c-1", src: "/images/Logo.png", alt: "Client 1" },
-    { id: "c-2", src: "/images/Logo.png", alt: "Client 2" },
-    { id: "c-3", src: "/images/Logo.png", alt: "Client 3" },
-    { id: "c-4", src: "/images/Logo.png", alt: "Client 4" },
-    { id: "c-5", src: "/images/Logo.png", alt: "Client 5" }
+    { id: "c-1", src: "/images/partener1.jpg", alt: "Client 1" },
+    { id: "c-2", src: "/images/partener2.jpg", alt: "Client 2" },
+    { id: "c-3", src: "/images/partener3.jpg", alt: "Client 3" },
+    { id: "c-4", src: "/images/partener4.jpg", alt: "Client 4" },
+    { id: "c-5", src: "/images/partener5.jpg", alt: "Client 5" }
   ]
 };

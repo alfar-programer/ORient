@@ -18,13 +18,13 @@
 }
 
 .icon-contact {
-  background: linear-gradient(135deg, rgba(2, 2, 2, 0.8) 60%, rgba(6, 48, 233, 0.9) 40%);
+  background: transparent;
   padding: 20px;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   box-shadow: 0 0 25px rgba(34, 197, 94, 0.5),
-              0 0 45px rgba(34, 197, 94, 0.2),
-              inset 0 0 20px rgba(34, 197, 94, 0.2);
+   box-shadow: 0 0 25px rgba(255, 255, 255, 0.5),
+              0 0 45px rgba(255, 255, 255, 0.2),
+              inset 0 0 20px rgba(243, 243, 243, 0.2);
   border-color: rgba(14, 15, 15, 0.4);
 }
 
@@ -98,9 +98,7 @@
   background: rgba(226, 13, 13, 0.05);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(34, 197, 94, 0.2);
-  box-shadow: 0 0 15px rgba(34, 197, 94, 0.3),
-              0 0 30px rgba(34, 197, 94, 0.1),
-              inset 0 0 15px rgba(34, 197, 94, 0.1);
+  
 }
 
 /* Responsive padding for main-box */
@@ -112,15 +110,15 @@
 
 .main-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(34, 197, 94, 0.5),
-              0 0 45px rgba(34, 197, 94, 0.2),
-              inset 0 0 20px rgba(34, 197, 94, 0.2);
+  box-shadow: 0 0 25px rgba(37, 15, 233, 0.5),
+              0 0 45px rgba(15, 207, 255, 0.2),
+              inset 0 0 20px rgba(4, 197, 255, 0.2);
   border-color: rgba(34, 197, 94, 0.4);
 }
 
 .icon-boxcontact svg {
   font-size: 2.6rem;
-  color: #1100ff;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .boxnumb-contact {
@@ -147,7 +145,7 @@
 .btncontact-1{
     padding: 12px 24px;
     border: 2px solid #0306a7;
-    color: #692cf7;
+    color: #f8f6ff;
     border-radius: 8px;
     font-weight: 600;
     background: transparent;
@@ -161,18 +159,18 @@
 }
 .btncontact-2{
     padding: 12px 24px;
-    border: 2px solid #22c55e;
+    border: 2px solid #d3dad6;
     color: #000000;
     border-radius: 8px;
     font-weight: 600;
-    background: #22c55e;
+    background: #224ca8;
     transition: all 0.3s ease;
     font-weight: bold;
 }
 .btncontact-2:hover {
-    background: #16a34a;
-    color: #ffffff;
-    box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
+    background: #fafafa;
+    color: #000000;
+    box-shadow: 0 4px 15px rgba(12, 15, 13, 0.4);
 }
 
 .btns-contact{
@@ -206,69 +204,12 @@
     background-position: 0% 50%;
   }
 }
-
-
-/* animation bg */
-.animated-bg {
-  position: relative;
-  overflow: hidden;
-}
-
-.animated-bg::before,
-.animated-bg::after {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(13, 14, 13, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
-  animation: float 15s infinite;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.animated-bg::before {
-  top: -150px;
-  left: -150px;
-}
-
-.animated-bg::after {
-  bottom: -150px;
-  right: -150px;
-  animation-delay: -7.5s;
-}
-
-@keyframes float {
-  0% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.5;
-  }
-  25% {
-    transform: translate(100px, 100px) scale(1.2);
-    opacity: 0.3;
-  }
-  50% {
-    transform: translate(200px, 50px) scale(0.8);
-    opacity: 0.5;
-  }
-  75% {
-    transform: translate(100px, -100px) scale(1.1);
-    opacity: 0.3;
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0.5;
-  }
-}
-
-
-
 /* Projects-contact */
 
 .Project-main{
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, rgba(2, 2, 2, 0.8) 60%, rgba(6, 48, 233, 0.9) 40%);
+  background: linear-gradient(135deg, rgba(196, 195, 241, 0.8) 60%, rgba(6, 48, 233, 0.9) 60%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,4 +273,10 @@
     width: 70%;
     margin-left: 30px;
   }
+}
+
+.main-projectsc{
+
+  background: linear-gradient(135deg, rgba(15, 12, 190, 0.8) 60%, rgba(6, 48, 233, 0.9) 40%);
+  background: linear-gradient(45deg, #3a2a83 4%, #6762b6 60%, #080147 90%);
 }

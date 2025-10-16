@@ -42,6 +42,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
+    padding-top: 20%;
 }
 
 /* Responsive container for full width/height */
@@ -61,7 +62,7 @@
 
 .text-titleabout {
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 /* Responsive title font size */
@@ -86,7 +87,6 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    min-height: 60vh; /* Ensure minimum height for content */
 }
 
 /* Responsive grid layout */
@@ -94,7 +94,7 @@
   .minmin-container {
     flex-direction: column; /* Mobile: vertical layout */
     gap: 2rem; /* Mobile: add gap */
-    min-height: 80vh; /* Mobile: more height for vertical layout */
+  /* Mobile: more height for vertical layout */
   }
 }
 

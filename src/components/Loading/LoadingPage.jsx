@@ -14,22 +14,63 @@ const LoadingPage = ({ onLoadingComplete }) => {
   ]
 
   useEffect(() => {
+    // Check if all page assets are loaded
+    const checkPageLoad = () => {
+      if (document.readyState === 'complete') {
+        return true;
+      }
+      
+      // Check if images are loaded
+      const images = document.images;
+      for (let i = 0; i < images.length; i++) {
+        if (!images[i].complete) {
+          return false;
+        }
+      }
+      
+      // Check if videos are loaded
+      const videos = document.querySelectorAll('video');
+      for (let i = 0; i < videos.length; i++) {
+        if (videos[i].readyState < 3) {
+          return false;
+        }
+      }
+      
+      return true;
+    }
+
     let currentStep = 0
-    const interval = setInterval(() => {
+    const stepInterval = setInterval(() => {
       if (currentStep < loadingSteps.length) {
         setLoadingText(loadingSteps[currentStep].text)
         setProgress(loadingSteps[currentStep].progress)
         currentStep++
       } else {
-        clearInterval(interval)
-        setIsComplete(true)
-        setTimeout(() => {
-          onLoadingComplete()
-        }, 1000)
+        clearInterval(stepInterval)
+        
+        // Wait for actual page load before completing
+        const checkLoadInterval = setInterval(() => {
+          if (checkPageLoad()) {
+            clearInterval(checkLoadInterval)
+            setIsComplete(true)
+            setTimeout(() => {
+              onLoadingComplete()
+            }, 1000)
+          }
+        }, 100)
       }
     }, 800)
 
-    return () => clearInterval(interval)
+    // Additional event listeners for page load
+    window.addEventListener('load', () => {
+      setProgress(100)
+      setLoadingText('Ready!')
+    })
+
+    return () => {
+      clearInterval(stepInterval)
+      window.removeEventListener('load', () => {})
+    }
   }, [onLoadingComplete])
 
   return (
@@ -42,6 +83,9 @@ const LoadingPage = ({ onLoadingComplete }) => {
               src="/images/Logo.png" 
               alt="Company Logo" 
               className="company-logo"
+              onError={(e) => {
+                e.target.style.display = 'none'
+              }}
             />
             <div className="logo-glow"></div>
           </div>
