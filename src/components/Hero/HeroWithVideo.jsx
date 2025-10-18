@@ -11,7 +11,7 @@ const HeroWithVideo = () => {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const [images, setImages] = useState([]);
-  const frameCount = 306; // عدد الفريمات
+  const frameCount = 245; // عدد الفريمات
 
   // 🧩 تحميل كل الفريمات + عرض أول صورة أول ما تجهز
   useEffect(() => {
