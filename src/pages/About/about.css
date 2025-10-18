@@ -7,7 +7,14 @@
     padding: 0;
     margin: 0;
      
-    background: linear-gradient(0deg, #444444 85%, #ffffff);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("/images/bg.jpg") no-repeat center/cover;
+  font-family: "Cairo", sans-serif;
 }
 
 /* Responsive full height for about page */
