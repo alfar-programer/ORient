@@ -18,10 +18,14 @@ export const SCROLL_TEXT_CUES = [
     text: "", 
     startY: 0, 
     endY: 450,
-    // No scroll animation on the first title per user request
     useScrollFloat: false,
     titleClassName: "scroll-cue-title-main",
-    textClassName: "scroll-cue-text-main"
+    textClassName: "scroll-cue-text-main",
+    button: {
+      text: "تعرف على ضماناتنا",
+      path: "/quality-guarantees",
+      className: "bg-blue-800 hover:bg-blue-900 border-blue-600"
+    }
   },
   { 
     id: "cue-1100",
@@ -30,7 +34,12 @@ export const SCROLL_TEXT_CUES = [
     startY: 750, 
     endY: 1600,
     titleClassName: "scroll-cue-title-elevators",
-    textClassName: "scroll-cue-text-elevators"
+    textClassName: "scroll-cue-text-elevators",
+    button: {
+      text: "استكشاف المصاعد",
+      path: "/elevators-solutions",
+      className: "bg-green-800 hover:bg-green-900 border-green-600"
+    }
   },
   { 
     id: "cue-2500",
@@ -39,7 +48,12 @@ export const SCROLL_TEXT_CUES = [
     startY: 1860, 
     endY: 2650,
     titleClassName: "scroll-cue-title-construction",
-    textClassName: "scroll-cue-text-construction"
+    textClassName: "scroll-cue-text-construction",
+    button: {
+      text: "مشاريع البناء",
+      path: "/construction-projects",
+      className: "bg-purple-800 hover:bg-purple-900 border-purple-600"
+    }
   },
   { 
     id: "cue-5600",
@@ -49,8 +63,12 @@ export const SCROLL_TEXT_CUES = [
     endY: 4340,
     titleClassName: "scroll-cue-title-projects",
     textClassName: "scroll-cue-text-projects",
-    marqueeKey: "partners"
-   
+    marqueeKey: "partners",
+    button: {
+      text: "رؤية المشاريع",
+      path: "/our-projects",
+      className: "bg-red-800 hover:bg-red-900 border-red-600"
+    }
   },
   {
     id: "cue-5000",
@@ -62,7 +80,12 @@ export const SCROLL_TEXT_CUES = [
     titleClassName: "scroll-cue-title-projects",
     textClassName: "scroll-cue-text-projects",
     className: "fixed left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 z-20 text-center px-6",
-    style: { height: "80vh", width: "100%" }
+    style: { height: "80vh", width: "100%" },
+    button: {
+      text: "شهادات العملاء",
+      path: "/testimonials",
+      className: "bg-orange-800 hover:bg-orange-900 border-orange-600"
+    }
   },
   {                           
     id: "cue-about",
@@ -71,10 +94,14 @@ export const SCROLL_TEXT_CUES = [
     startY: 5510, 
     endY: 7000,
     titleClassName: "scroll-cue-title-about",
-    textClassName: "scroll-cue-text-about"
+    textClassName: "scroll-cue-text-about",
+    button: {
+      text: "اتصل بنا",
+      path: "/contact",
+      className: "bg-gray-800 hover:bg-gray-900 border-gray-600"
+    }
   },
 ];
-
 
 // src/constants/data.js
 
