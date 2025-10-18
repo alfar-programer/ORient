@@ -30,11 +30,11 @@ const Footer = () => {
               <ul className="links-list">
                 <li>
                   <a href="#" className="footer-link">
-                    ORIENT@Gmail.com
+                    info@orientgulf.com
                   </a>
                 </li>
                 <li>
-                  <span className="footer-text">Cairo, Egypt</span>
+                  <span className="footer-text">الطابق الثالث، مكتب (406)، مركز البطحاء التجاري والإداري، شارع عتاب بن أسيد، 24352 مكة، المملكة العربية السعودية</span>
                 </li>
               </ul>
             </div>

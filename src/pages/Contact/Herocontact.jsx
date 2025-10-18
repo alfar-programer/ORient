@@ -29,24 +29,24 @@ const getIconComponent = (iconName) => {
 const Herocontact = () => {
   return (
     <main 
-      className="sectioncontact animated-bg bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 text-white relative min-h-screen w-full"
+      className="sectioncontact animated-bg bg-gradient-to-br relative min-h-screen w-full"
       id="contact"
     >
       <div className="container-contact w-full">
         
         {/* شعار أو أيقونة علوية */}
         <div className="flex justify-center mb-8">
-          <div className="icon-contact bg-green-500 p-6 rounded-full shadow-lg">
-            <MdOutlineWork className="text-white text-7xl" />
+          <div className="icon-contact p-6 rounded-full shadow-lg">
+            <MdOutlineWork className="text-white icon-main text-7xl" />
           </div>
         </div>
 
         {/* العنوان الرئيسي */}
         <div className="text-center mb-8">
-          <h2 className="textcontact-title gradient-text text-4xl md:text-5xl font-bold leading-tight text-green-400 mb-4">
+          <h2 className="textcontact-title gradient-text text-4xl md:text-5xl font-bold leading-tight mb-4">
             معرض أعمالنا
           </h2>
-          <h3 className="textcontact-suptitle text-2xl md:text-3xl font-semibold text-white">
+          <h3 className="textcontact-suptitle text-2xl md:text-3xl font-semibold">
             المتميزة
           </h3>
         </div>
@@ -55,7 +55,7 @@ const Herocontact = () => {
         <p className="suptitle-contacttext text-center text-gray-300 text-sm md:text-base leading-relaxed">
           نستعرض لك مجموعة من أفضل مشاريعنا التقنية المبتكرة التي نفذناها بنجاح
           <br />
-          <span className="text-green-400 font-medium">مشاريع احترافية تلبي احتياجات العصر</span>
+          <span className="text-gray-500 font-medium">مشاريع احترافية تلبي احتياجات العصر</span>
         </p>
 
         {/* قسم الإحصائيات (الكارتس) */}

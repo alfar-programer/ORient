@@ -95,10 +95,10 @@ export const LOGOS = {
     { id: "p-5", src: "/images/project5.jpg", alt: "Partner 5" }
   ],
   clients: [
-    { id: "c-1", src: "/images/partener1.jpg", alt: "Client 1" },
-    { id: "c-2", src: "/images/partener2.jpg", alt: "Client 2" },
-    { id: "c-3", src: "/images/partener3.jpg", alt: "Client 3" },
-    { id: "c-4", src: "/images/partener4.jpg", alt: "Client 4" },
-    { id: "c-5", src: "/images/partener5.jpg", alt: "Client 5" }
+    { id: "c-1", src: "/images/Logo.png", alt: "Client 1" },
+    { id: "c-2", src: "/images/Logo.png", alt: "Client 2" },
+    { id: "c-3", src: "/images/Logo.png", alt: "Client 3" },
+    { id: "c-4", src: "/images/Logo.png", alt: "Client 4" },
+    { id: "c-5", src: "/images/Logo.png", alt: "Client 5" }
   ]
 };

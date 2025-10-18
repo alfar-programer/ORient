@@ -52,17 +52,17 @@ const Contact = () => {
 
       {/* Contact Form */}
       <div className="container1">
-        <h2>Contact Us Form</h2>
+        <h2>ابدأ معنا الآن</h2>
 
         <form
-          action="https://formspree.io/f/mzblbjpk"
-          method="POST"
+          action=""
+          method=""
         >
           <div className="row100">
             <div className="col">
               <div className="inputBox">
                 <input type="text" name="first_name" required />
-                <span className="text">First Name</span>
+                <span className="text">الاسم الاول</span>
                 <span className="line"></span>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Contact = () => {
             <div className="col">
               <div className="inputBox">
                 <input type="text" name="last_name" required />
-                <span className="text">Last Name</span>
+                <span className="text">Full Name</span>
                 <span className="line"></span>
               </div>
             </div>

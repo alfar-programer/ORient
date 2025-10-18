@@ -6,6 +6,8 @@
     width: 100%;
     padding: 0;
     margin: 0;
+     
+    background: linear-gradient(0deg, #444444 85%, #ffffff);
 }
 
 /* Responsive full height for about page */
@@ -117,4 +119,21 @@
     text-align: center; /* Mobile: center text */
     padding: 0 1rem; /* Mobile: add padding */
   }
+}
+
+.btn-contact{
+    margin-top: 3rem;
+}
+
+.btn-contact a{
+    background-color: #1E40AF;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn-contact a:hover{
+    background-color: #2563EB;
 }

@@ -27,7 +27,7 @@ const projects = [
 
 const ProjectsContact = () => {
   return (
-    <section className="main-projectsc relative min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br  text-white px-6 py-20">
+    <section className="main-projectsc relative min-h-screen overflow-hidden flex items-center justify-center   text-white px-6 py-20">
       {/* خلفية متحركة خفيفة */}
 
       <div className="relative z-10 w-full max-w-7xl">
@@ -62,7 +62,7 @@ const ProjectsContact = () => {
                     {project.description}
                   </p>
                 </div>
-                <button className="btn-project mt-auto w-full bg-gradient-to-r from-blue-600 to-green-500 hover:opacity-90 text-white font-semibold py-2 rounded-lg transition-all duration-300 shadow-md">
+                <button className=" btn-project mt-auto w-full bg-gradient-to-r from-blue-600 TOtext-gray-300 hover:opacity-90 text-white font-semibold py-2 rounded-lg transition-all duration-300 shadow-md">
                   احجز معنا
                 </button>
               </div>
