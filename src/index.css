@@ -72,3 +72,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.text-videoScroll{
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #444444;
+  background: linear-gradient(45deg, #444444 0%, #333333 50%,  #ffffff 100%);
+  color: #333333;
+  animation: gradientFlow 6s ease infinite;
+  background-size: 200% 200%;
+  color: #ffffff;
+  padding: 10px 20px;
+}

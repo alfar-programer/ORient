@@ -24,7 +24,7 @@ export const SCROLL_TEXT_CUES = [
     button: {
       text: "تعرف على ضماناتنا",
       path: "/quality-guarantees",
-      className: "bg-blue-800 hover:bg-blue-900 border-blue-600"
+      className: "text-videoScroll bg-blue-800 hover:bg-blue-900 border-blue-600"
     }
   },
   { 
@@ -38,7 +38,7 @@ export const SCROLL_TEXT_CUES = [
     button: {
       text: "استكشاف المصاعد",
       path: "/elevators-solutions",
-      className: "bg-green-800 hover:bg-green-900 border-green-600"
+      className: "text-videoScroll bg-green-800 hover:bg-green-900 border-green-600"
     }
   },
   { 
@@ -52,7 +52,7 @@ export const SCROLL_TEXT_CUES = [
     button: {
       text: "مشاريع البناء",
       path: "/construction-projects",
-      className: "bg-purple-800 hover:bg-purple-900 border-purple-600"
+      className: "text-videoScroll bg-purple-800 hover:bg-purple-900 border-purple-600"
     }
   },
   { 
@@ -67,9 +67,9 @@ export const SCROLL_TEXT_CUES = [
     button: {
       text: "رؤية المشاريع",
       path: "/our-projects",
-      className: "bg-red-800 hover:bg-red-900 border-red-600"
+      className: "text-videoScroll bg-red-800 hover:bg-red-900 border-red-600"
     }
-  },
+    },
   {
     id: "cue-5000",
     title: "عملاؤنا", 
@@ -84,7 +84,7 @@ export const SCROLL_TEXT_CUES = [
     button: {
       text: "شهادات العملاء",
       path: "/testimonials",
-      className: "bg-orange-800 hover:bg-orange-900 border-orange-600"
+      className: "text-videoScroll bg-orange-800 hover:bg-orange-900 border-orange-600"
     }
   },
   {                           
@@ -98,7 +98,7 @@ export const SCROLL_TEXT_CUES = [
     button: {
       text: "اتصل بنا",
       path: "/contact",
-      className: "bg-gray-800 hover:bg-gray-900 border-gray-600"
+      className: " text-videoScroll bg-gray-800 hover:bg-gray-900 border-gray-600"
     }
   },
 ];

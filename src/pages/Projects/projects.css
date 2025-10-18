@@ -6,7 +6,7 @@
   min-height: 100vh;
   overflow: hidden;
   background: url("/images/bg.jpg") no-repeat center/cover;
-  font-family: "Cairo", sans-serif;
+  font-family: "Cairo", sans-serif, 'GE SS Two';
 }
 
 /* Overlay layer */

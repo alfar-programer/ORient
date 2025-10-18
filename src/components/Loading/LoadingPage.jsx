@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './LoadingPage.css'
+import Asset from '../../hooks/assetCache'
+
 
 const LoadingPage = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0)
@@ -168,6 +170,7 @@ const LoadingPage = ({ onLoadingComplete }) => {
 
   return (
     <div className={`loading-page ${isComplete ? 'fade-out' : ''}`}>
+      
       <div className="loading-container">
         {/* Company Logo */}
         <div className="loading-logo">

@@ -1,9 +1,16 @@
 .sectioncontact {
   padding-top: 9%;
-
   width: 100%;
   min-height: 100vh; /* ⬅️ مهم عشان الخلفية تغطي الشاشة كاملة */
-  color: #444444;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("/images/bg.jpg") no-repeat center/cover;
+  font-family: "Cairo", sans-serif;
 }
 
 .container-contact {
@@ -17,7 +24,7 @@
 }
 .icon-contact svg {
   font-size: 5rem;
-  color: #444444;
+  color: #fafafa;
 }
 .icon-contact {
   padding: 20px;
@@ -119,13 +126,13 @@
 
 .icon-boxcontact svg {
   font-size: 2.6rem;
-  color: #444444;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .boxnumb-contact {
   font-size: 2rem;
   font-weight: bold;
-  color: #444444;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .textsupcontact {
@@ -145,8 +152,8 @@
 
 .btncontact-1{
     padding: 12px 24px;
-    border: 2px solid #333333;
-    color: #444444;
+    border: 2px solid #7c7474;
+    color: #ffffff;
     border-radius: 8px;
     font-weight: 600;
     background: transparent;
@@ -186,7 +193,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(45deg, #444444 0%, #333333 50%,  #ffffff 100%);
+  background: linear-gradient(45deg, #f1f1f1 0%, #909099 50%,  #ffffff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
