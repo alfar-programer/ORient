@@ -27,8 +27,6 @@
   font-display: swap;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -46,25 +44,16 @@ html, body {
   will-change: transform;
 }
 
-.animated-div {
-  will-change: width;
-}
-
-
-/* تحسين الأداء */
 body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
   height: 100%;
 }
 
-/* لتحسين أداء الرسوم */
+/* حركة الخلفية */
 .animated-div {
   will-change: width, clip-path;
 }
 
-/* لجعل الدائرة تظهر بشكل جميل */
 .circle {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
@@ -73,14 +62,76 @@ body {
   justify-content: center;
 }
 
-.text-videoScroll{
+.cue-btn-center {
+  width: 100%;
+  display: flex;
+   /* default right */
+   background:transparent;
+   justify-content: center; /* ✅ محتوى في الوسط */
+}
+
+.cue-btn-right {
+  width: 100%;
+  display: flex;
+   /* default right */
+   background:transparent;
+   justify-content: right; /* ✅ محتوى على اليمين */
+}
+/* تصميم النص المتحرك */
+.text-videoScroll-right {
   margin-top: 30px;
   cursor: pointer;
-  background-color: #444444;
-  background: linear-gradient(45deg, #444444 0%, #333333 50%,  #ffffff 100%);
-  color: #333333;
+  background: linear-gradient(45deg, #052a79 0%, #2563EB 50%, #ffffff 100%);
+  color: #ffffff;
   animation: gradientFlow 6s ease infinite;
   background-size: 200% 200%;
-  color: #ffffff;
   padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ✅ محتوى على اليمين */
+  text-align: right;
+  margin-right: 4rem;
+  
+}
+
+
+.text-videoScroll-center{
+  margin-top: 30px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #052a79 0%, #2563EB 50%, #ffffff 100%);
+  color: #ffffff;
+  animation: gradientFlow 6s ease infinite;
+  background-size: 200% 200%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ✅ محتوى على اليمين */
+  text-align: right;
+}
+
+
+
+.text-title-scroll{
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+
+.text-dis-scroll{
+  color: #ceced4;
+  font-size: 1rem;
+  text-align: right;
+  margin: 30px 10px;
+}
+
+.box-sizeProjects-scroll{
+  width: 30rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: #052a79;
 }

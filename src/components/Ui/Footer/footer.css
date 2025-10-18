@@ -1,11 +1,13 @@
 .footer {
-  background-color: #04044ebd;
+  padding-top: 20rem;
+  background-color: #04042b;
   padding: 1rem 0 0rem;
-  border-top: 1px solid rgba(109, 68, 68, 0.1);
+  border-top: 1px solid rgba(109, 68, 68, 0.534);
   margin-top: auto;
 }
 
 .footer-container {
+  padding-top: 20rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -13,6 +15,7 @@
 
 /* Main Content Section */
 .footer-main {
+    padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;

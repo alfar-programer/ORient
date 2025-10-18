@@ -10,6 +10,27 @@ const projects = [
     image: "/images/project1.jpg",
   },
   {
+    id: 1,
+    title: "تصميم وتطوير مصعد الكتروني حديث",
+    description:
+      "شركة رائدة في تقديم حلول المصاعد الذكية والتقنيات الحديثة للنقل العمودي.",
+    image: "/images/project1.jpg",
+  },
+  {
+    id: 1,
+    title: "تصميم وتطوير مصعد الكتروني حديث",
+    description:
+      "شركة رائدة في تقديم حلول المصاعد الذكية والتقنيات الحديثة للنقل العمودي.",
+    image: "/images/project1.jpg",
+  },
+  {
+    id: 1,
+    title: "تصميم وتطوير مصعد الكتروني حديث",
+    description:
+      "شركة رائدة في تقديم حلول المصاعد الذكية والتقنيات الحديثة للنقل العمودي.",
+    image: "/images/project1.jpg",
+  },
+  {
     id: 2,
     title: "تصميم وتطوير مصعد كهربائي عالي الجودة",
     description:
@@ -56,14 +77,14 @@ const ProjectsContact = () => {
                 className="w-full h-56 object-cover rounded-t-2xl"
               />
               <div className="box-textprojexts p-6 flex flex-col justify-between flex-grow">
-                <div>
+                <div className="textcard-projects">
                   <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                  <p className="suptextimg text-sm leading-relaxed mb-6">
                     {project.description}
                   </p>
                 </div>
-                <button className=" btn-project mt-auto w-full bg-gradient-to-r from-blue-600 TOtext-gray-300 hover:opacity-90 text-white font-semibold py-2 rounded-lg transition-all duration-300 shadow-md">
-                  احجز معنا
+                <button className=" btn-project TOtext-gray-300 hover:opacity-90 py-2 rounded-lg transition-all duration-300 shadow-md">
+                    المزيد
                 </button>
               </div>
             </motion.div>

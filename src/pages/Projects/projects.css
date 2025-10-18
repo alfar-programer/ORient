@@ -1,4 +1,5 @@
 .contact {
+  padding-top: 14%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -7,6 +8,7 @@
   overflow: hidden;
   background: url("/images/bg.jpg") no-repeat center/cover;
   font-family: "Cairo", sans-serif, 'GE SS Two';
+  padding-bottom: 80px;
 }
 
 /* Overlay layer */
@@ -198,14 +200,14 @@ button[type="submit"] {
   padding: 10px 40px;
   cursor: pointer;
   outline: none;
-  background: #45f3ff;
-  color: #000;
+  background-color: #1E40AF;
+  color: #fff;
   font-size: 18px;
   border-radius: 4px;
   transition: 0.3s;
 }
 
 button[type="submit"]:hover {
-  background-color: #03e9f4;
-  box-shadow: 0 0 10px #45f3ff, 0 0 20px #45f3ff;
+  background-color: #2e81ff;
+  box-shadow: 0 0 10px #c4e7eb, 0 0 20px #1613eb;
 }

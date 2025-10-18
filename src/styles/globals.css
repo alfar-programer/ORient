@@ -81,13 +81,13 @@
 
 /* Responsive font sizes for scroll-cue-title-elevators */
 @media (min-width: 640px) {
-  .scroll-cue-title-elevators { font-size: 4rem; } /* Small: 4rem */
+  .scroll-cue-title-elevators { font-size: 3rem; } 
 }
 @media (min-width: 768px) {
-  .scroll-cue-title-elevators { font-size: 5rem; } /* Medium: 5rem */
+  .scroll-cue-title-elevators { font-size: 3.5rem; } 
 }
 @media (min-width: 1024px) {
-  .scroll-cue-title-elevators { font-size: 6rem; } /* Large: 6rem */
+  .scroll-cue-title-elevators { font-size: 4rem; } 
 }
 
 .scroll-cue-text-elevators{
@@ -98,6 +98,7 @@
   text-align: right;
   margin-right: 6rem;
   font-weight: bold;
+  max-width: 500px;
   /* glassy blur background */
   /* background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(10px);
@@ -109,13 +110,13 @@
 
 /* Responsive font sizes for scroll-cue-text-elevators */
 @media (min-width: 640px) {
-  .scroll-cue-text-elevators { font-size: 1.25rem; } /* Small: 1.25rem */
+  .scroll-cue-text-elevators { font-size: 1rem; } /* Small: 1.25rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-text-elevators { font-size: 1.5rem; } /* Medium: 1.5rem */
+  .scroll-cue-text-elevators { font-size: 1.25rem; } /* Medium: 1.5rem */
 }
 @media (min-width: 1024px) {
-  .scroll-cue-text-elevators { font-size: 2rem; } /* Large: 2rem */
+  .scroll-cue-text-elevators { font-size: 1.5rem; } /* Large: 2rem */
 }
 
 
@@ -130,13 +131,13 @@
 
 /* Responsive font sizes for scroll-cue-title-construction */
 @media (min-width: 640px) {
-  .scroll-cue-title-construction { font-size: 4rem; } /* Small: 4rem */
+  .scroll-cue-title-construction { font-size: 3rem; } /* Small: 4rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-title-construction { font-size: 5rem; } /* Medium: 5rem */
+  .scroll-cue-title-construction { font-size: 3.5rem; } /* Medium: 5rem */
 }
 @media (min-width: 1024px) {
-  .scroll-cue-title-construction { font-size: 6rem; } /* Large: 6rem */
+  .scroll-cue-title-construction { font-size: 4rem; } /* Large: 6rem */
 }
 .scroll-cue-text-construction{
   width: 50%;
@@ -150,18 +151,18 @@
 
 /* Responsive font sizes for scroll-cue-text-construction */
 @media (min-width: 640px) {
-  .scroll-cue-text-construction { font-size: 1.5rem; } /* Small: 1.5rem */
+  .scroll-cue-text-construction { font-size: 1rem; } /* Small: 1.5rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-text-construction { font-size: 2rem; } /* Medium: 2rem */
+  .scroll-cue-text-construction { font-size: 1.25rem; } /* Medium: 2rem */
 }
 @media (min-width: 1024px) {
-  .scroll-cue-text-construction { font-size: 3rem; } /* Large: 3rem */
+  .scroll-cue-text-construction { font-size: 1.5rem; } /* Large: 3rem */
 }
 
 .scroll-cue-title-projects{
   color: white;
-  font-size: 2.5rem; /* Mobile: 2.5rem */
+  font-size: .5rem; /* Mobile: 2.5rem */
   font-weight: bold;
   text-align: center;
   
@@ -170,35 +171,35 @@
 
 /* Responsive font sizes for scroll-cue-title-projects */
 @media (min-width: 640px) {
-  .scroll-cue-title-projects { font-size: 3.5rem; } /* Small: 3.5rem */
+  .scroll-cue-title-projects { font-size: 2.5rem; } /* Small: 3.5rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-title-projects { font-size: 4.5rem; } /* Medium: 4.5rem */
+  .scroll-cue-title-projects { font-size: 3.5rem; } /* Medium: 4.5rem */
 }
 @media (min-width: 1024px) {
-  .scroll-cue-title-projects { font-size: 5rem; } /* Large: 5rem */
+  .scroll-cue-title-projects { font-size: 4rem; } /* Large: 5rem */
 }
 .scroll-cue-text-projects{
   width: 100%;
   color: white;
   font-size: 1rem; /* Mobile: 1rem */
   text-align: center;
-  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Responsive font sizes for scroll-cue-text-projects */
 @media (min-width: 640px) {
-  .scroll-cue-text-projects { font-size: 1.25rem; } /* Small: 1.25rem */
+  .scroll-cue-text-projects { font-size: 1rem; } /* Small: 1.25rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-text-projects { font-size: 1.5rem; } /* Medium: 1.5rem */
+  .scroll-cue-text-projects { font-size: 1.25rem; } /* Medium: 1.5rem */
 }
 @media (min-width: 1024px) {
-  .scroll-cue-text-projects { font-size: 2rem; } /* Large: 2rem */
+  .scroll-cue-text-projects { font-size:1.5rem; } /* Large: 2rem */
 }
 .scroll-cue-title-partners{
   color: white;
-  font-size: 2.5rem; /* Mobile: 2.5rem */
+  font-size: 4rem; 
   font-weight: bold;
   text-align: center;
   ;
@@ -206,13 +207,13 @@
 
 /* Responsive font sizes for scroll-cue-title-partners */
 @media (min-width: 640px) {
-  .scroll-cue-title-partners { font-size: 3.5rem; } /* Small: 3.5rem */
+  .scroll-cue-title-partners { font-size: 3rem; } /* Small: 3.5rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-title-partners { font-size: 4.5rem; } /* Medium: 4.5rem */
+  .scroll-cue-title-partners { font-size: 3.5rem; } /* Medium: 4.5rem */
 }
 @media (min-width: 1024px) {
-  .scroll-cue-title-partners { font-size: 5rem; } /* Large: 5rem */
+  .scroll-cue-title-partners { font-size: 4rem; } /* Large: 5rem */
 }
 .scroll-cue-text-partners{
   width: 50%;
@@ -220,7 +221,7 @@
 
 .scroll-cue-title-about{
   color: white;
-  font-size: 2.5rem; /* Mobile: 2.5rem */
+  font-size: 1.5rem; /* Mobile: 2.5rem */
   font-weight: bold;
   text-align: right;
   padding-right: 6rem;
@@ -228,29 +229,31 @@
 }
 
 /* Responsive styles for scroll-cue-title-about */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .scroll-cue-title-about {
     text-align: center; /* Mobile: center title */
     padding-right: 0; /* Mobile: no right padding */
     margin-bottom: 1rem; /* Mobile: add bottom margin */
+    font-size: 3rem
   }
 }
 
-/* Responsive font sizes for scroll-cue-title-about */
+
 @media (min-width: 640px) {
-  .scroll-cue-title-about { font-size: 3.5rem; } /* Small: 3.5rem */
+  .scroll-cue-title-about { font-size: 3rem; } /* Small: 3.5rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-title-about { font-size: 4.5rem; } /* Medium: 4.5rem */
+  .scroll-cue-title-about { font-size: 3.5rem; } /* Medium: 4.5rem */
 }
 @media (min-width: 1024px) {
   .scroll-cue-title-about { 
-    font-size: 5rem; /* Large: 5rem */
+    font-size: 4rem; /* Large: 5rem */
     text-align: right; /* Desktop: back to right align */
     padding-right: 6rem; /* Desktop: back to original padding */
     margin-bottom: 0; /* Desktop: no bottom margin */
   }
 }
+
 .scroll-cue-text-about{
   width: 50%;
   margin-left: auto; /* push to right within full-width wrapper */
@@ -277,14 +280,14 @@
 
 /* Responsive font sizes for scroll-cue-text-about */
 @media (min-width: 640px) {
-  .scroll-cue-text-about { font-size: 1.25rem; } /* Small: 1.25rem */
+  .scroll-cue-text-about { font-size: 1rem; } /* Small: 1.25rem */
 }
 @media (min-width: 768px) {
-  .scroll-cue-text-about { font-size: 1.5rem; } /* Medium: 1.5rem */
+  .scroll-cue-text-about { font-size: 1.25rem; } /* Medium: 1.5rem */
 }
 @media (min-width: 1024px) {
   .scroll-cue-text-about { 
-    font-size: 2rem; /* Large: 2rem */
+    font-size: 1.5rem; /* Large: 2rem */
     width: 50%; /* Desktop: back to 50% */
     margin-right: 6rem; /* Desktop: back to original margin */
     text-align: right; /* Desktop: back to right align */
@@ -357,4 +360,33 @@
 
 .animate-scroll-right {
   animation: scroll-right 25s linear infinite;
+}
+
+
+/* حركة أفقية مستمرة للـ partners */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+/* لما توقف الماوس على القسم، توقف الحركة */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* لإخفاء الجزء اللي خارج الإطار */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
