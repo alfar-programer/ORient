@@ -191,10 +191,9 @@ const LoadingPage = ({ onLoadingComplete }) => {
         </div>
 
         {/* Loading Text */}
-        <h1 className="loading-title">Building</h1>
-        <p className="loading-subtitle">3D Architecture Experience</p>
+        <h1 className="loading-title">Loading website</h1>
         <div className="company-name">
-          <span className="company-text">Fortune Code</span>
+          {/* <span className="company-text">Fortune Code</span> */}
         </div>
 
         {/* Progress Bar */}
